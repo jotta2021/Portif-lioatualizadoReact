@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 
 export const Container = styled.div`
-background-color:#000000;
+background-color:white;
 display:flex;
 flex-direction:column;
 
@@ -10,9 +10,10 @@ flex-direction:column;
 height: 100vh;
 
 h2{
-    color:white;
+    color:black;
     text-align:center;
    margin-top:2rem;
+   font-size:1.7rem;
 
 }
 `
@@ -26,7 +27,7 @@ margin-bottom:2rem;
 justify-content:center;
 width:15rem;
  height:23rem;
- background-color:black;
+ background-color:white;
  border: 3px solid transparent;
  border-image: linear-gradient(to right, rgba(252,70,107,1), rgb(63,94,251));
  border-image-slice: 1;
@@ -34,7 +35,9 @@ width:15rem;
 display:flex;
 flex-direction:column;
 
-
+h2{
+    font-size:1.3rem;;
+}
 
 img{
     cursor:pointer;
@@ -47,7 +50,10 @@ img{
  
 
     
-},
+}
+:hover{
+opacity: 0.7;
+}
 
 `
 export const Info = styled.div`
@@ -59,8 +65,8 @@ align-items:center;
 
  
 p{
-    font-weight: 200;
- color:white;
+    font-weight: 400;
+ color:black;
     width: 12rem;
     height: 5rem;
   flex-wrap:wrap;
@@ -102,12 +108,12 @@ display:flex;
 justify-content:center;
 gap:2rem;
 
+
 `
 export const Icon = styled.div`
-background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    color: black;
-width:4em;
+background-color: rgba(252,70,107,1);
+    box-shadow: 1px 2px 9px rgba(252,70,107,1);
+width:6rem;
 height:4rem;
 border-radius:0.5rem;
 justify-content:center;

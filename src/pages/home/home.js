@@ -2,12 +2,16 @@ import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { IoIosArrowDroprightCircle } from 'react-icons/io'
 
-import * as C from './styles'
+
+import { Link } from 'react-router-dom'
+import './home.css'
 export default function Home() {
   return (
-    <C.Container>
-      <h1>Joanderson Luan</h1>
-      <h2> Frontend Developer</h2>
+    <div className='home'>
+      <h1 className='name'>Joanderson Luan</h1>
+      <h2 className='prof'> Frontend Developer</h2>
+<Link to='/about'>
+
 
       <button>
         Sobre mim
@@ -16,16 +20,17 @@ export default function Home() {
         
        
       </button>
-      <C.Icons>
+      </Link>
+      <div className='icons'>
             <a
               href="https://github.com/jotta2021"
               target="_blank"
               rel="noreferrer"
             >
-              <C.Icon>
+              <div className='icon'>
                 <AiFillGithub size={24} color="white" />
                 <p>Github</p>
-              </C.Icon>
+              </div>
             </a>
 
             <a
@@ -33,12 +38,13 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              <C.Icon>
+              <div className='icon'>
                 <AiFillLinkedin size={24} color="white" />
                 <p>Linkedin</p>
-              </C.Icon>{' '}
+              </div>
             </a>
-          </C.Icons>
-    </C.Container>
+          </div>
+         
+    </div>
   )
 }

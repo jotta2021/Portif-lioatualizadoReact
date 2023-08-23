@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Home from '../pages/home/home'
 import About from '../pages/about/about'
 import Tech from '../pages/tech/tech'
+import App from '../App'
 
 export default function Router() {
   return (
@@ -10,9 +11,10 @@ export default function Router() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path='/projects' element={Tech}/>
+      
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route  exact path='/projects' element={<Tech/>}/>
       </Routes>
     </BrowserRouter>
   )

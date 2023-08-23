@@ -10,18 +10,21 @@ export const Container = styled.div`
     text-decoration: none;
     color: black;
   }
+  @media (max-width: 768px){
+   img{
+    width:15rem;
+   }
+   }
+ 
+ 
 `
 
 export const Title = styled.h2`
 h2{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom:1rem;
-  background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    bacground-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+ 
 }
   
  
@@ -29,11 +32,18 @@ h2{
 export const Info = styled.div`
   
   display: flex;
+  flex-direction:collum;
   justify-content: center;
   align-items: center;
   gap: 3rem;
   width: 70%
   margin-left:center
+
+  @media (max-width:768px){
+display:none;
+
+   
+  }
   
 `
 export const Image = styled.div`
@@ -44,6 +54,7 @@ img {
   border:none;
 
  }
+
 `
 export const Paragraph = styled.div`
   width: 30rem;
@@ -78,5 +89,3 @@ cursor:pointer;
     box-shadow: 1px 2px 9px rgba(252,70,107,1)
   }
 `
-export const Technologies = styled.div``
-export const Cx = styled.div``

@@ -3,14 +3,15 @@ import React from 'react'
 import * as C from './styles'
 import Photo from '../../assets/photo.jpg'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import './about.css'
 export default function About() {
   return (
-    <C.Container>
+    <div className='about'>
      
-      <C.Info>
-        <C.Paragraph> 
-          <C.Title><h2>Sobre mim
-        </h2> </C.Title>
+      <div className="info">
+        <div className="paragraph"> 
+          <h2 className="title">Sobre mim
+        </h2> 
           <p>
             Olá! Meu nome é Joandeson Luan , e sou um desenvolvedor front-end
             apaixonado por criar experiências digitais incríveis. Tenho um amplo
@@ -18,16 +19,16 @@ export default function About() {
             MySQL, o que me permite desenvolver aplicações web e móveis
             interativas e responsivas.
           </p>
-          <C.Icons>
+          <div className="icon-socials">
             <a
               href="https://github.com/jotta2021"
               target="_blank"
               rel="noreferrer"
             >
-              <C.Icon>
+              <div className="icon-social">
                 <AiFillGithub size={24} color="white" />
                 <p>Github</p>
-              </C.Icon>
+              </div>
             </a>
 
             <a
@@ -35,20 +36,20 @@ export default function About() {
               target="_blank"
               rel="noreferrer"
             >
-              <C.Icon>
+              <div className="icon-social">
                 <AiFillLinkedin size={24} color="white" />
                 <p>Linkedin</p>
-              </C.Icon>{' '}
+              </div>{' '}
             </a>
-          </C.Icons>
-        </C.Paragraph>
-<C.Image>
+          </div>
+        </div>
+<div className="image">
    <img src={Photo} />
-</C.Image>
+</div>
        
-      </C.Info>
+      </div>
 
       
-    </C.Container>
+    </div>
   )
 }

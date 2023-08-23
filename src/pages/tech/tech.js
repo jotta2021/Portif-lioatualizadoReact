@@ -30,9 +30,9 @@ export default function Tech(){
             id: 3,
             name: 'Portifólio',
             desc:'O seguinte site apresenta um pouco das minhas experiências e projetos com o uso de algumas tecnologias.',
-            image: 'https://github.com/jotta2021/Weather-api-app/blob/master/Imagem%20do%20WhatsApp%20de%202023-07-29%20%C3%A0(s)%2023.59.19.jpg?raw=true',
-            git: 'https://github.com/jotta2021/Weather-api-app',
-            site: 'https://github.com/jotta2021/Weather-api-app'
+            image: 'https://github.com/jotta2021/Portif-lioatualizadoReact/blob/master/Captura%20de%20tela%202023-08-23%20195703.png?raw=true',
+            git: 'https://github.com/jotta2021/Portif-lioatualizadoReact',
+            site: 'https://github.com/jotta2021/Portif-lioatualizadoReact'
         },
         {
             id: 3,
